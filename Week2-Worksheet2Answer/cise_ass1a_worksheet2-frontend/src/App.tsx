@@ -1,18 +1,5 @@
-/* import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
-
-export default App; */
-
 import React, { Component } from "react";
+import './App.css'  // Need to import the App css file to comply the style.
 
 interface State {
   count: number;
@@ -35,10 +22,10 @@ class App extends Component<{}, State> {
 
   render() {
     return (
-      <div>
+      <div  className="container">
         <p>Count: {this.state.count}</p>
         <button className="increment" onClick={this.increment}>
-          Increment count
+          Increment counts!!
         </button>
       </div>
     );
